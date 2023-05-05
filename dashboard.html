@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dasch.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <!-- <div class="menu col-auto" id="menu" > -->
+        <div class="menu col-auto d-flex flex-column d-md-block align-items-center align-items-sm-center px-3 pt-2 text-white min-vh-100 "id="menu" style="background-color: white;" >
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"id="nav">
+            <li class="nav-item" id="hov">
+              <a href="#" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-lg-inline">
+                  <img src="logo-cabture.png" alt="" width="200px"></span>
+              </a>
+            </li>
+            <li class="nav-item dash">
+              <a href="dashboard.html" class="nav-link align-middle px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                </svg>
+                <span class="ms-1 d-none d-lg-inline">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html" class="nav-link px-0 align-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-pie-chart" viewBox="0 0 16 16">
+                  <path
+                    d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                </svg>
+                <span class="ms-1 d-none d-lg-inline">Facture</span> </a>
+            </li>
+            <li>
+              <a href="command.html" class="nav-link px-0 align-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z" />
+                </svg>
+                <span class="ms-1 d-none d-lg-inline">Commande</span></a>
+            </li>
+            <li>
+              <a href="suivi.html" class="nav-link px-0 align-middle ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+                <span class="ms-1 d-none d-lg-inline">Suivi</span></a>
+            </li>
+            <li>
+              <a href="serviceclient.html" class="nav-link px-0 align-middle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  <path
+                    d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <span class="ms-1 d-none d-lg-inline">Service Client</span> </a>
+
+            </li>
+            <div class="par-comp position-absolute bottom-0">
+              <li>
+                <a href="parametre.html" class="nav-link px-0 align-middle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                    <path
+                      d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                  </svg>
+                  <span class="ms-1 d-none d-lg-inline">Parametre Compte</span> </a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-link px-0 align-middle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-escape" viewBox="0 0 16 16">
+                    <path
+                      d="M8.538 1.02a.5.5 0 1 0-.076.998 6 6 0 1 1-6.445 6.444.5.5 0 0 0-.997.076A7 7 0 1 0 8.538 1.02Z" />
+                    <path
+                      d="M7.096 7.828a.5.5 0 0 0 .707-.707L2.707 2.025h2.768a.5.5 0 1 0 0-1H1.5a.5.5 0 0 0-.5.5V5.5a.5.5 0 0 0 1 0V2.732l5.096 5.096Z" />
+                  </svg>
+                  <span class="ms-1 d-none d-lg-inline">Déconnexion</span> </a>
+              </li>
+            </div>
+          </ul>
+         
+        </div>
+      <!-- </div> -->
+      <div class="col">
+        <div class="nav-bar bg-white d-flex" style="margin-top: -1rem; text-align: end; justify-content: flex-end;">
+
+          <div class="alarm" style="margin-top: 1rem;">
+            <img src="alarm.png" id="alarm" width="50%">
+          </div>
+          <div class="b">
+            <img src="b.png" id="b" width="60%">
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="croissance d-flex p-5">
+          <div class="rire" style="width: calc(30%);">
+            <h3 id="h2_2">Analyse positive</h3>
+            <br><br>
+            <div class="part-pos" style="text-align: center; border-radius: 8%; height: 400px;">
+              <br> <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                <path
+                  d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+              </svg><br><br>
+              <h2>Positive</h2>
+              <div class="arc" style="width: calc(80%); margin: auto;  pointer-events: none;">
+                <canvas id="myChart"></canvas>
+                <span id="batard"><h2>91%</h2></span>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script>
+                  const ctx = document.getElementById('myChart');
+
+                  new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                      datasets: [{
+                        data: [91, 9],
+                        backgroundColor: [
+                          'white',
+                          '#4a8aa1'
+                        ],
+                        borderWidth: 1,
+                      }]
+                    },
+                    options: {
+                      circumference: 260,
+                      rotation: -130,
+                      cutout: '80%',
+                      plugins: {
+                        legend: {
+                          display: false
+                        }
+                      }
+                    },
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="ecrit" style="width: calc(30%);">
+            <h3 id="h2">Analyse negative</h2>
+            <br><br>
+            <div class="part-neg"
+              style="background-color: white; text-align: center; height: 400px; border-radius: 8%;">
+              <br>
+              <div class="sang"
+                style="border-radius: 50%;background-color: #b9d5db; width: calc(17%); margin: auto;height: 50px;color: #55A0B1">
+                
+                <i class="fa-solid fa-droplet" style="margin: 17px;"></i>
+              </div><br>
+              <h2>Negative</h2>
+              <div class="arc-neg" style="width: calc(80%); margin: auto;
+                pointer-events: none;
+            ">
+                <canvas id="myChart-neg"></canvas>
+                <div class="c"><span id="cafard"><h2>9%</h2></span></div>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script>
+                  const dtx = document.getElementById('myChart-neg');
+
+                  new Chart(dtx, {
+                    type: 'doughnut',
+                    data: {
+                      labels: ['Red'],
+                      datasets: [{
+                        data: [9, 91],
+                        backgroundColor: [
+                          '#55A0B1',
+                          'rgb(223, 218, 218)'
+                        ],
+                        borderWidth: 1
+                      }]
+                    },
+                    options: {
+                      circumference: 260,
+                      rotation: -130,
+                      cutout: '80%',
+                      plugins: {
+                        legend: {
+                          display: false
+                        }
+                      }
+
+                      //   scales: {
+                      //     y: {
+                      //       beginAtZero: true
+                      //     }
+                      //   }
+                    },
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="progress-bar">
+          <h2>Analyse par mois</h2>
+          <br>
+          <br>
+          <canvas id="myChart-progress" style="height: 200px;"></canvas>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script>
+            const ptx = document.getElementById('myChart-progress');
+
+            new Chart(ptx, {
+              type: 'bar',
+              data: {
+                labels: ['JAN', 'FEV', 'MARS', 'AVRIL', 'MAI', 'JUIN', 'JUL', 'AOUT', 'SEPT', 'OCT', 'NOV', 'DEC'],
+                datasets: [{
+                  data: [13, 11, 15, 10, 12, 8, 11, 13, 13, 13, 13, 13],
+                  borderWidth: 1,
+                  hoverBackgroundColor: "#55A0B1",
+                  backgroundColor: "#fff",
+                  barThickness: 45,
+                }]
+              },
+              options: {
+                plugins: {
+                  legend: {
+                    display: false
+                  },
+                },
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    display: false,
+                  }
+                }
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

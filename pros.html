@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="arc">
+    <canvas id="myChart-progress" style="height: 200px;"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ptx = document.getElementById('myChart-progress');
+
+      new Chart(ptx, {
+        type: 'doughnut',
+        data: {
+          labels: ['JAN'],
+          datasets: [{
+            data: [13, 11, 15, 10, 12, 8, 11, 13, 13, 13, 13, 13],
+            borderWidth: 1,
+            hoverBackgroundColor: "#55A0B1",
+            backgroundColor: "#000",
+            barThickness: 45,
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              display: false,
+            }
+          }
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
